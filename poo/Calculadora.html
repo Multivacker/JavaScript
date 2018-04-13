@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+<script>
+
+var num1 = prompt("Ingrese el primer numero");
+var num2 = prompt("Ingrese el segundo numero");
+
+if(!isNaN(num1) && !isNaN(num2)){
+
+	var operacion = prompt("Qué operacion deseas realizar? 			suma/resta/multiplicar/dividir");
+
+	/*alert(typeof(num1));*/
+
+	if (operacion == "suma"){
+	/*var resultado = num1 + num2;*/
+		alert (parseInt(num1) + parseInt(num2));
+	
+	}else if(operacion == "resta"){
+	
+		alert (parseInt(num1) - parseInt(num2));
+	
+	}else if(operacion == "multiplicación" || operacion == "multiplicacion"){
+	
+		alert (parseInt(num1) * parseInt(num2));
+	
+	}else if(operacion == "división" || operacion == "division"){
+	
+		alert (parseInt(num1) / parseInt(num2));
+
+	}else{
+		
+		alert ("Operación no contemplada.");
+	
+}
+
+}else{
+	
+	if(typeof(num1) == "string" || typeof(num2) == "string"){
+		
+		alert ("No haz introducido valores numéricos.");
+	
+		/*alert ("No se pueden operar los números.");*/
+		
+	}else{
+		
+		alert ("Ha ocurrido un error no identificado");
+	}
+}
+</script>
+
+</head>
+
+<body>
+</body>
+</html>
