@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+
+img{
+	opacity:0.5;
+}
+
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<script>
+  $(document).ready(function() {
+   $("#boton").click(function() {
+    var oculto = $("#menu").css("left") == "-210px";
+    if(oculto){
+     $("#menu").animate({left:"0px"}, 1000);
+    }else{
+     $("#menu").animate({left:"-210px"}, 1000);
+    }
+   });
+  });
+</script>
+
+</head>
+
+<body>
+<img src="img/Alma.jpg" width="300" height="300" id="imagen">
+
+</body>
+</html>

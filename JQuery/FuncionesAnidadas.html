@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Efecto anidadas</title>
+<style>
+
+#titulo{
+	margin-left:150px;
+}
+
+#foto p{
+	background-color:#000;
+	color:#FFF;
+	font-size:24px;
+	text-align:center;
+	font-weight:bold;
+	width:300px;
+}
+h1{
+	text-align:center;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+
+<script>
+
+$(document).ready(function() {
+
+	$("#titulo").hide();
+
+	$("#foto img").width(60).height(60).click(function(){
+
+		$(this).animate({
+
+			marginLeft:"150px",
+			width:"300px",
+			height:"300px"
+
+		},1000, function(){//funcion anidadas
+
+			$("#titulo").fadeIn(1000).delay(1000).fadeOut();
+
+		}).delay(2200);//termina animate
+
+		$(this).animate({
+
+			marginLeft:"0px",
+			width:"60px",
+			height:"60px"
+
+		},1000);
+
+	});//termina funcion click
+
+
+});// termina función ready
+
+
+
+
+</script>
+</head>
+
+<body>
+<h1>
+
+Prueba imagen
+
+</h1>
+
+<div id="foto">
+
+	<img src="img/Madre.jpg" width="300" height="300" id="imagen1">
+
+	<p id="titulo">Madre en años Luz</p>
+
+</div>
+
+</body>
+</html>

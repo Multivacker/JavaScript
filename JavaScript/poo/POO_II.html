@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<input type="button" id="boton1" >
+<input type="button" id="boton2" >
+<input type="text" id="texto1" >
+
+<script>
+
+	var miboton = document.getElementById("boton1");
+	var miboton2 = document.getElementById("boton2");
+	var mitexto = document.getElementById("texto1");
+	
+	miboton.style.width = "200px";
+	miboton.style.height = "50px";
+	
+	miboton2.style.width = "200px";
+	miboton2.style.height = "50px";
+	
+	mitexto.style.width = "200px";
+	mitexto.style.height = "50px";
+	
+	miboton.style.backgroundColor = "cyan";
+	miboton2.style.backgroundColor = "cyan";
+	
+	/*miboton.focus();*/
+	miboton2.focus();
+	
+	mitexto.style.backgroundColor = "yellow";
+	mitexto.value = "Escriba aquí: ";
+
+</script>
+</body>
+</html>

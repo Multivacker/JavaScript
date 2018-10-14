@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+  document.getElementById("img1").addEventListener("mouseover", cambiar, false);
+  document.getElementById("img1").addEventListener("mouseout", restaurar, false);
+  });
+
+    function cambiar(){
+
+      $("img").attr("src", "img/Bajo.jpg");
+    }
+
+    function restaurar(){
+
+      $("img").attr("src", "img/Alma.jpg");
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <img src="img/Alma.jpg" id="img1">
+
+
+</body>
+</html>
